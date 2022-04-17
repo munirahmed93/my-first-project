@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo Form</title>
+</head>
+
+<body>
+    <h1>Demo Form</h1>
+    <form action="/email">
+        <input type="email" placeholder="email">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <input type="search" placeholder="search here">
+        <input type="number">
+        <input type="date">
+        <input type="time">
+        <input type="url" placeholder="provide link">
+        <input type="submit">
+
+
+
+        <h2>More attributes</h2>
+
+        <p>
+            <label for="email"> enter your email id</label>
+            <input type="email" placeholder="email" id="email">
+        </p>
+        <p>
+            <label for="username"> type username</label>
+            <input type="text" placeholder="username" id="username">
+
+        </p>
+        <p>
+            <label for="password"> Choose Password</label>
+            <input type="password" placeholder="password" id="password">
+        </p>
+        <p>
+            <label for="DOB">Date of Birth</label>
+            <input type="date" id="DOB">
+        </p>
+
+        <p>
+            <label for="url"> Enter url </label>
+            <input type="url" placeholder="provide link" id="url">
+        </p>
+
+        <hr>
+
+        <h2>More Inputs</h2>
+
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">I agree</label>
+        <!-- label is to give name to your check and button will take the response or submit response to "action" 
+        in this case action is not active, it is a random name, but in real example it will function
+         and we will receive responses their -->
+
+        <P><b>Below is the Radio Button Example</b></P>
+        <!-- radio is group of radio buttons, you can only select one, they're connected/grouped and 
+            the browser knows if you click A, it's going to have to make sure B and C are unclick or unchecked. -->
+        <h3>Choose one size</h3>
+        <p>
+            <label for="S">S</label>
+            <input type="radio" name="SIZE" id="S" value="S">
+        </p>
+        <p>
+            <label for="M">M</label>
+            <input type="radio" name="SIZE" id="M" value="M">
+        </p>
+        <p>
+            <label for="L">L</label>
+            <input type="radio" name="SIZE" id="L" value="L">
+        </p>
+
+        <!-- So in order to group them together, we need to associate them by giving them the same exact name. -->
+        <!-- Value is another important attribute in input,
+        whatever we have in this value is not going to be displayed to a user.
+        Instead, it's just what is sent through when the form is submitted.
+        The value should be unique.value will be sent to the server, what will be submitted. -->
+        <hr>
+
+        <p>
+            <!-- Select is a drowdown menu, we can choose one item from available options -->
+            <label for="Animal">choose your favourite animal</label>
+            <select name="Meal" id="Meal">
+                <option value="">--Please choose an option--</option>
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Goat">Goat</option>
+                <option value="Cow">Cow</option>
+            </select>
+        </p>
+        <p>
+            <label for="Animal">choose your favourite animal</label>
+            <select name="Meal" id="Meal">
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Goat" selected>Goat</option>
+                <option value="Cow">Cow</option>
+            </select>
+        </p>
+        <p>
+            <label for="Requests">Any Special Requests</label>
+            <textarea name="Requests" id="Requests" cols="30" rows="10"></textarea>
+        </p>
+
+        <button>Submit Here</button>
+
+        <hr>
+
+        <h2>Race Registration!</h2>
+        <p>
+            <label for="first">First Name</label>
+            <input type="text" name="firstname" id="first" required>
+            <label for="last">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </p>
+<!-- Required is a attribute which specifices that input must be entered before submitting a form -->
+
+        <p>Select a Race</h4>
+
+
+        <div>
+
+            <input type="radio" name="race" id="funrun" value="funrun">
+            <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+
+            <input type="radio" name="race" id="half" value="half">
+            <label for="half">half marathon</label>
+        </div>
+        <div>
+
+            <input type="radio" name="race" id="full marathon" value="full">
+            <label for="full marathon">full marathon</label>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="5" maxlength="8" >
+
+            <!-- minlength and maxlength is a attrubute which requires user to enter required number of characters -->
+        </div>
+
+        <div>
+            <label for="Division">Select Age Group</label>
+            <select name="Division" id="Division">
+                <option value="Kids">Below 18</option>
+                <option value="youngadults">18-30</option>
+                <option value="adults">31-45</option>
+                <option value="senior">46+</option>
+
+            </select>
+        </div>
+        <p>
+
+            <button>Register</button>
+        </p>
+
+
+    </form>
+
+
+</body>
+
+</html>
